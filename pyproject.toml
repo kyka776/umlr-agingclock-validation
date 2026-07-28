@@ -1,0 +1,61 @@
+[build-system]
+requires = ["hatchling>=1.27,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "aging-clock-umlr-audit"
+version = "0.1.0"
+description = "Independent, leakage-safe validation harness for the official UMLR aging-clock method"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {file = "LICENSE"}
+authors = [{name = "kyka776"}]
+dependencies = [
+  "matplotlib>=3.8,<4",
+  "numpy>=1.26,<3",
+  "pandas>=2.2,<3",
+  "scipy>=1.13,<2",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[project.optional-dependencies]
+notebook = [
+  "ipykernel>=6.29,<7",
+  "nbclient>=0.10,<1",
+  "nbformat>=5.10,<6",
+]
+real-data = [
+  "rdata>=0.11,<1",
+]
+test = [
+  "pytest>=8.3,<9",
+  "pytest-cov>=6,<7",
+]
+dev = [
+  "aging-clock-umlr-audit[notebook,real-data,test]",
+  "build>=1.2,<2",
+  "ruff>=0.12,<1",
+]
+
+[project.scripts]
+aging-clock-audit = "aging_clock_audit.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/aging_clock_audit"]
+
+[tool.pytest.ini_options]
+addopts = "-ra --strict-markers"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

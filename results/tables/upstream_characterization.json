@@ -1,0 +1,11 @@
+{
+  "upstream_commit": "3cf11abcecc5c3c99b9748d64c04f570d51243c3",
+  "file": "Lasso_UP.R",
+  "sha256": "8050563de787434452f6f8a8105ef1163227a7ddecb7a389f8f9acbf7fb5073b",
+  "paper_lower_region_uses_less_than_or_equal": false,
+  "code_lower_region_uses_strict_less_than": true,
+  "upper_region_uses_strict_greater_than": true,
+  "explicit_constant_outcome_guard": false,
+  "solver_status_checked": false,
+  "constraint_residual_checked": false
+}

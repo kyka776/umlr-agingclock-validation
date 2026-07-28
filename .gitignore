@@ -1,0 +1,23 @@
+.DS_Store
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# External inputs are fetched from their authoritative sources and never committed.
+data/raw/*
+!data/raw/.gitkeep
+
+# Derived sample-level data stay local. Only reviewed aggregate tables are committed.
+data/processed/*
+!data/processed/.gitkeep
+
+# Local copies of third-party repositories and scratch artifacts.
+vendor/
+tmp/

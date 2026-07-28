@@ -1,0 +1,15 @@
+{
+  "source_sha256": "5a96d2f9f8f2807e220f9d699fc6f5364a80a49ccc946b0950357d13e36f2beb",
+  "source_shape_features_by_samples": [
+    2974,
+    56
+  ],
+  "train_n": 38,
+  "test_n": 18,
+  "selected_features": 24,
+  "selection": "top training-only variance; stable tie breaking",
+  "split_seed": 20260729,
+  "split": "group x training-global-age-tertile stratified 70/30 holdout",
+  "lambda": 0.02,
+  "raw_or_sample_level_output_committed": false
+}

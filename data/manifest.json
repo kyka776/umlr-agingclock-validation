@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "as_of": "2026-07-29",
+  "sources": [
+    {
+      "id": "umlr_official",
+      "kind": "source-code-reference",
+      "repository": "https://github.com/hwiyoungstat/UMLR",
+      "commit": "3cf11abcecc5c3c99b9748d64c04f570d51243c3",
+      "license": "NONE_FOUND",
+      "redistribution": "not vendored; fetch locally or in CI for black-box tests"
+    },
+    {
+      "id": "omniage_example",
+      "kind": "candidate-real-data-example",
+      "repository": "https://github.com/Duzhaozhen/OmniAge",
+      "commit": "77f8eb56ed7436ce93593142944362369a86ee6b",
+      "repository_license": "MIT",
+      "file": "OmniAgeR/inst/extdata/omniager_lung_inv.rds",
+      "download": "https://raw.githubusercontent.com/Duzhaozhen/OmniAge/77f8eb56ed7436ce93593142944362369a86ee6b/OmniAgeR/inst/extdata/omniager_lung_inv.rds",
+      "sha256": "5a96d2f9f8f2807e220f9d699fc6f5364a80a49ccc946b0950357d13e36f2beb",
+      "bytes": 1242820,
+      "shape": {
+        "methylation_features": 2974,
+        "samples": 56,
+        "phenotype_columns": ["Group", "Age", "num"]
+      },
+      "redistribution": "raw and sample-level inputs are not committed; only reviewed aggregate diagnostics may be published",
+      "status": "validated and used through pinned local download; exploratory human tutorial data, no clinical claims"
+    }
+  ]
+}
