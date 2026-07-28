@@ -1,5 +1,3 @@
-# Paper/code boundary and reproducibility checks for `Lasso_UP`
-
 Thank you for making the UMLR demonstration available. I built an independent
 audit against the equations in the aging-clock preprint:
 

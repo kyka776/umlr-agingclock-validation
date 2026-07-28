@@ -26,10 +26,10 @@ I also found one boundary difference I would appreciate your guidance on. The
 preprint defines the lower region as `Y_i <= mean(Y)`, while the audited
 `Lasso_UP.R` commit uses `y < mean.y`, excluding observations exactly at the
 mean. The same source has no explicit constant-outcome guard or solver-status /
-constraint-residual check. I opened a focused issue with a pinned
-characterization and tests:
+constraint-residual check. I opened a focused issue with a pinned characterization
+and tests:
 
-ISSUE_URL
+https://github.com/hwiyoungstat/UMLR/issues/1
 
 Could you confirm the intended lower-region boundary? If you would welcome a
 tested patch or example, could you also add or clarify the repository license?
